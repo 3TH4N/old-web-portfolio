@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70vh 30vh;
+}
+
+.top {
+    width:auto;
+    height:auto;
+    background-color:;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    z-index: -5;
+    background: white;
+}
+
+.topleft {
+    height: 99%;
+    width: 100%;
+    background-color: white;
+    z-index: 0;
+}
+
+.iamethan {
+  width: 947px;
+  height: auto;
+  position:absolute;
+  left:-947px;
+  position: relative;
+  -webkit-animation: mymove 5s forwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s forwards;
+  animation-delay: 1.5s;
+    
+  z-index: -1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: -100%;}
+  to {left: 0px;}
+}
+
+@keyframes mymove {
+  from {left: -100%;}
+  to {left: 0px;}
+}
+
+/*.imethan {
+    width:auto;
+    height:auto;
+    background-color:;
+    -webkit-animation: imethan 1s infinite;
+    -webkit-animation-delay: 2s; 
+    -moz-animation: imethan 1s infinite;
+    animation: imethan 1.9s infinite;
+    animation-delay: 2s;
+    
+}
+
+@-webkit-keyframes imethan {
+    from {left: 0px;}
+  to {left: 200px;}
+}
+
+@-moz-keyframes imethan {
+    from {left: 0px;}
+  to {left: 200px;}
+}
+
+@keyframes imethan {
+   from {left: 0px;}
+  to {left: 200px;}
+} */
+
+.bottom {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: Impact;
+    color: #006359;
+    z-index: 6;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #006359;
+    z-index: 5;
+}
+
+.bottomleft {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: -300px;
+    position: relative;
+   -webkit-animation: myup 2s forwards; /* Safari 4.0 - 8.0 */
+   -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation: myup 2s forwards;
+    animation-delay: 1s;
+    text-decoration: none;
+    z-index: ;
+}
+
+.bottommiddle {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: -300px;
+    position: relative;
+   -webkit-animation: myup 3s forwards; /* Safari 4.0 - 8.0 */
+   -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation: myup 3s forwards;
+    animation-delay: 1s;
+}
+
+.bottomright {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: -300px;
+    position: relative;
+   -webkit-animation: myup 4s forwards; /* Safari 4.0 - 8.0 */
+   -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation: myup 4s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes myup {
+  from {bottom: -100%;}
+  to {top: 0%;}
+}
+
+@keyframes myup {
+  from {bottom: -100%;}
+  to {top: 0%;
+    }
+}
